@@ -27,22 +27,17 @@
  */
 declare module '$env/static/private' {
 	export const LESSOPEN: string;
-	export const npm_package_dev: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const npm_node_execpath: string;
-	export const npm_package_resolved: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
 	export const OLDPWD: string;
-	export const npm_package_optional: string;
 	export const npm_package_json: string;
-	export const npm_package_engines_node: string;
 	export const HOMEBREW_PREFIX: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
-	export const npm_package_integrity: string;
 	export const WSL_DISTRO_NAME: string;
 	export const COLOR: string;
 	export const npm_config_metrics_registry: string;
@@ -66,10 +61,8 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const LESSCLOSE: string;
-	export const npm_package_dev_optional: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
-	export const npm_package_peer: string;
 	export const GPG_TTY: string;
 	export const PWD: string;
 	export const npm_execpath: string;
@@ -82,6 +75,7 @@ declare module '$env/static/private' {
 	export const WSLENV: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -112,22 +106,17 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		LESSOPEN: string;
-		npm_package_dev: string;
 		USER: string;
 		npm_config_user_agent: string;
 		npm_node_execpath: string;
-		npm_package_resolved: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
 		OLDPWD: string;
-		npm_package_optional: string;
 		npm_package_json: string;
-		npm_package_engines_node: string;
 		HOMEBREW_PREFIX: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
-		npm_package_integrity: string;
 		WSL_DISTRO_NAME: string;
 		COLOR: string;
 		npm_config_metrics_registry: string;
@@ -151,10 +140,8 @@ declare module '$env/dynamic/private' {
 		npm_package_version: string;
 		npm_lifecycle_event: string;
 		LESSCLOSE: string;
-		npm_package_dev_optional: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
-		npm_package_peer: string;
 		GPG_TTY: string;
 		PWD: string;
 		npm_execpath: string;
@@ -167,6 +154,7 @@ declare module '$env/dynamic/private' {
 		WSLENV: string;
 		INIT_CWD: string;
 		EDITOR: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
