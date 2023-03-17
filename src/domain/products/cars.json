@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Doc Hudson",
+        "slug": "doc-hudson",
+        "image": "/public/products/cars/doc_hudson.png"
+    },
+    {
+        "id": 2,
+        "name": "Lightning McQueen",
+        "slug": "lightning-mcqueen",
+        "image": "/public/products/cars/lightning_mcqueen.png"
+    },
+    {
+        "id": 3,
+        "name": "Mater",
+        "slug": "mater",
+        "image": "/public/products/cars/mater.png"
+    },
+    {
+        "id": 4,
+        "name": "Sally Carrera",
+        "slug": "sally-carrera",
+        "image": "/public/products/cars/sally_carrera.png"
+    },
+    {
+        "id": 5,
+        "name": "Sarge",
+        "slug": "sarge",
+        "image": "/public/products/cars/sarge.png"
+    },
+    {
+        "id": 6,
+        "name": "Sheriff",
+        "slug": "sheriff",
+        "image": "/public/products/cars/sheriff.png"
+    },
+    {
+        "id": 7,
+        "name": "The King",
+        "slug": "the-king",
+        "image": "/public/products/cars/the_king.png"
+    },
+    {
+        "id": 8,
+        "name": "Tow Mater",
+        "slug": "tow-mater",
+        "image": "/public/products/cars/tow_mater.png"
+    },
+    {
+        "id": 9,
+        "name": "Wingo",
+        "slug": "wingo",
+        "image": "/public/products/cars/wingo.png"    
+    }
+]
