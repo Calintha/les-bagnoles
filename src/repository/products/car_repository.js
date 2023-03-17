@@ -27,7 +27,7 @@ class CarRepository {
 
     findOneBy = (options = []) => {
         const result = this.findBy(options);
-        return result.length > 0 ? result[0] : null;
+        return result.length ? result[0] : null;
     }
 
     findAll = () => {
