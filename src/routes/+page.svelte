@@ -27,7 +27,7 @@
 
 <h1>Katchaaaaaaaaaaaaaaaaaaaaaaw !</h1>
 <div class="header">
-    <img src="" alt="mcqueen" class="header-image">
+    <img src="/mcqueen.png" alt="mcqueen" class="header-image">
     <div class="header-text">
         <h1>Find your soulmate</h1>
         <p>Explore our wide selection of quality cars and find one that fits your needs. We offer flexible financing options and free delivery nationwide.</p>
@@ -49,11 +49,21 @@
         display: flex;
         align-items: center;
         background-color: #f8f9fa;
-        width: 100%;
+        width: 100vw;
+        overflow: hidden;
     }
     .header-image {
         width: 50%;
         margin-right: 2rem;
+        animation: slide-in 1s forwards;
+    }
+    @keyframes slide-in {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
     .header-text {
         width: 50%;
