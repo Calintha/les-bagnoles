@@ -26,8 +26,14 @@
 </script>
 
 <h1>Katchaaaaaaaaaaaaaaaaaaaaaaw !</h1>
-<p>Hope you find your soulmate</p>
-
+<div class="header">
+    <img src="" alt="mcqueen" class="header-image">
+    <div class="header-text">
+        <h1>Find your soulmate</h1>
+        <p>Explore our wide selection of quality cars and find one that fits your needs. We offer flexible financing options and free delivery nationwide.</p>
+        <a href="/product/cars" class="btn btn-primary">Shop now</a>
+    </div>
+</div>
 <div class="cards">
     {#each cards as card}
         <Card
@@ -39,6 +45,36 @@
 </div>
 
 <style>
+    .header {
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+        width: 100%;
+    }
+    .header-image {
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .header-text {
+        width: 50%;
+        text-align: left;
+    }
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .btn {
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 0.25rem;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: #0069d9;
+    }
     .cards {
         display: flex;
         flex-wrap: wrap;
