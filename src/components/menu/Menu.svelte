@@ -8,8 +8,12 @@
 
 <style>
     nav {
-        background-color: #f8f9fa;
-        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: #f8f9fac0;
+        padding: 0.5rem 1rem;
+        backdrop-filter: blur(5px);
     }
     nav ul {
         display: flex;

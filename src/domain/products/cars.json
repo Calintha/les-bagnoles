@@ -3,54 +3,48 @@
         "id": 1,
         "name": "Doc Hudson",
         "slug": "doc-hudson",
-        "image": "/public/products/cars/doc_hudson.png"
+        "image": "/products/cars/doc_hudson.webp"
     },
     {
         "id": 2,
         "name": "Lightning McQueen",
         "slug": "lightning-mcqueen",
-        "image": "/public/products/cars/lightning_mcqueen.png"
+        "image": "/mcqueen.png"
     },
     {
         "id": 3,
         "name": "Mater",
         "slug": "mater",
-        "image": "/public/products/cars/mater.png"
+        "image": "/products/cars/mater.png"
     },
     {
         "id": 4,
         "name": "Sally Carrera",
         "slug": "sally-carrera",
-        "image": "/public/products/cars/sally_carrera.png"
+        "image": "/products/cars/sally.png"
     },
     {
         "id": 5,
         "name": "Sarge",
         "slug": "sarge",
-        "image": "/public/products/cars/sarge.png"
+        "image": "/products/cars/sarge.png"
     },
     {
         "id": 6,
         "name": "Sheriff",
         "slug": "sheriff",
-        "image": "/public/products/cars/sheriff.png"
+        "image": "/products/cars/sheriff.jpg"
     },
     {
         "id": 7,
         "name": "The King",
         "slug": "the-king",
-        "image": "/public/products/cars/the_king.png"
-    },
-    {
-        "id": 8,
-        "name": "Tow Mater",
-        "slug": "tow-mater",
-        "image": "/public/products/cars/tow_mater.png"
+        "image": "/products/cars/king.png"
     },
     {
         "id": 9,
         "name": "Wingo",
         "slug": "wingo",
-        "image": "/public/products/cars/wingo.png"    
+        "image": "/products/cars/wingo.png" 
     }
 ]

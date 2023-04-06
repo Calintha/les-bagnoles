@@ -1,13 +1,21 @@
 <script>
+import { onMount } from "svelte";
+
 import CarRepository from '../../../repository/products/car_repository.js';
-
 const cars = CarRepository.findAll();
+
+let Carousel;
+onMount(async () => {
+const module = await import("../../../components/Carousel.svelte");
+Carousel = module.default;
+});
 </script>
-<h1>Shop</h1>
 
-{#each cars as car}
-    <h2>{car.name}</h2>
-    <p>{car.description}</p>
-    <p>{car.price} €</p>
-{/each}
+<h1>Discover our vehicules</h1>
+<svelte:component this={Carousel} elements={cars}/>
 
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>

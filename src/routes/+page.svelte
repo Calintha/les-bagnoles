@@ -27,24 +27,27 @@
 
 <div class="header">
     <div class=header-image-container>
-        <img src="/mcqueen.png" alt="mcqueen" class="header-image">
+        <img src="/mcqueen.png" alt="mcqueen" class="header-image" loading="lazy">
     </div>
     <div class="header-text">
-        <h1>Katchaaaaaaaaaaaaw !</h1>
+        <h1>Katchaaaaaaaw !</h1>
         <h2>Find your soulmate</h2>
         <p>Explore our wide selection of quality cars and find one that fits your needs. We offer flexible financing options and free delivery nationwide.</p>
         <a href="/product/cars" class="btn btn-primary">Shop now</a>
     </div>
 </div>
-<div class="cards">
-    {#each cards as card}
-        <Card
-            title={card.title}
-            description={card.description}
-            icon={card.icon}
-        />
-    {/each}
-</div>
+<section>
+    <h2>Why buy from us ?</h2>
+    <div class="cards">
+        {#each cards as card}
+            <Card
+                title={card.title}
+                description={card.description}
+                icon={card.icon}
+            />
+        {/each}
+    </div>
+</section>
 
 <style>
     .header {
@@ -88,22 +91,10 @@
     .header-text h1 {
         font-size: 3rem;
     }
-    .btn {
-        display: inline-block;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #fff;
-        background-color: #007bff;
-        border-radius: 0.25rem;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-    }
-    .btn:hover {
-        background-color: #0069d9;
-    }
     .cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 1rem;
+        justify-content: center;
     }
 </style>
