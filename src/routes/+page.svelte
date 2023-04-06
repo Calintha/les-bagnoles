@@ -25,11 +25,13 @@
     ]
 </script>
 
-<h1>Katchaaaaaaaaaaaaaaaaaaaaaaw !</h1>
 <div class="header">
-    <img src="/mcqueen.png" alt="mcqueen" class="header-image">
+    <div class=header-image-container>
+        <img src="/mcqueen.png" alt="mcqueen" class="header-image">
+    </div>
     <div class="header-text">
-        <h1>Find your soulmate</h1>
+        <h1>Katchaaaaaaaaaaaaw !</h1>
+        <h2>Find your soulmate</h2>
         <p>Explore our wide selection of quality cars and find one that fits your needs. We offer flexible financing options and free delivery nationwide.</p>
         <a href="/product/cars" class="btn btn-primary">Shop now</a>
     </div>
@@ -47,14 +49,27 @@
 <style>
     .header {
         display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
         align-items: center;
         background-color: #f8f9fa;
-        width: 100vw;
-        overflow: hidden;
+        padding: 8rem 4rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .header {
+            padding: 2rem;
+        }
+    }
+
+    .header-image-container {
+        flex: 1;
+        min-width: 300px;
     }
     .header-image {
-        width: 50%;
-        margin-right: 2rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         animation: slide-in 1s forwards;
     }
     @keyframes slide-in {
@@ -66,8 +81,9 @@
         }
     }
     .header-text {
-        width: 50%;
+        flex: 1;
         text-align: left;
+        min-width: 300px;
     }
     .header-text h1 {
         font-size: 3rem;
