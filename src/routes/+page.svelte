@@ -31,7 +31,7 @@
 
 <div class="header">
     <div class=header-image-container>
-        <img src="/mcqueen.png" alt="mcqueen" class="header-image" loading="lazy">
+        <img src="/products/cars/mcqueen/mcqueen.webp" alt="mcqueen" class="header-image" loading="lazy">
     </div>
     <div class="header-text">
         <h1>Katchaaaaaaaw !</h1>
@@ -81,10 +81,10 @@
     }
     @keyframes slide-in {
         from {
-            transform: translateX(-100%);
+            transform: translateX(-100%) scale(0.6);
         }
         to {
-            transform: translateX(0);
+            transform: translateX(0) scale(1.3);
         }
     }
     .header-text {
