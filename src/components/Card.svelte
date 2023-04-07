@@ -48,7 +48,7 @@
 <div class="card">
     <div class="card-body">
         <div class="d-flex">
-            <div class="icon">{icon}</div>
+            <div class="icon">{@html icon}</div>
             <div class="content">
                 <h2 class="card-title">{title}</h2>
                 <p class="card-text">{description}</p>
