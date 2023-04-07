@@ -20,7 +20,7 @@
 #image-track > .image-container {
   position: relative;
   width: 60vmin;
-  background: linear-gradient(0deg, #677891 0%, #a9b7cc 100%);
+  background: linear-gradient(0deg, #222934 0%, #60656d 100%);
   overflow: hidden;
 }
 
@@ -101,10 +101,8 @@
   <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
     {#each elements as element}
       <div class="image-container">
-        <img class="image" src={element.image} draggable="false" loading="lazy"/>
-        {#if element.name}
-          <h3>{element.name}</h3>
-        {/if}
+        <img class="image" src={element.image} alt={element.name} draggable="false" loading="lazy"/>
+        <h3>{element.name}</h3>
         {#if element.slug}
           <a href={`/product/${element.slug}`} class="btn btn-primary">Discover</a>
         {/if}
