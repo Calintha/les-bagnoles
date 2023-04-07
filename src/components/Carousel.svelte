@@ -26,15 +26,19 @@
 
 #image-track > .image-container {
   position: relative;
-  width: 80vmin;
+  width: 70vmin;
   height: 56vmin;
 }
-#image-track .image {
+#image-track > .image-container .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 100% center;
-
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+#image-track > .image-container:hover .image {
+  transform: scale(1.1);
 }
 
 #image-track > .image-container h3 {
