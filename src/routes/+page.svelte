@@ -25,6 +25,10 @@
     ]
 </script>
 
+<svelte:head>
+    <title>The Bagnoles - Home</title> 
+</svelte:head>
+
 <div class="header">
     <div class=header-image-container>
         <img src="/mcqueen.png" alt="mcqueen" class="header-image" loading="lazy">
