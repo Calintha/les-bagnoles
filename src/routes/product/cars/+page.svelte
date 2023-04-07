@@ -11,6 +11,10 @@ Carousel = module.default;
 });
 </script>
 
+<svelte:head>
+    <title>The Bagnoles - Products</title> 
+</svelte:head>
+
 <h1>Discover our vehicules</h1>
 <svelte:component this={Carousel} elements={cars}/>
 

@@ -13,6 +13,10 @@ onMount(async () => {
 });
 </script>
 
+<svelte:head>
+    <title>The Bagnoles - {car.name}</title> 
+</svelte:head>
+
 {#if car}
     <div class="header">
         <div class=header-image-container>
@@ -28,6 +32,7 @@ onMount(async () => {
         <Marquee content={car.categories.join(' - ')}/>
     {/if}
     {#if car.image_galery.length}
+
         <h2 style="text-align: center; padding: 4rem 0;">Image galery</h2>
         <svelte:component this={Carousel} elements={car.image_galery}/>
     {/if}

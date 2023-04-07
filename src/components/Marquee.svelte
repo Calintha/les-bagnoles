@@ -2,7 +2,7 @@
 export let content = "";
 </script>
 
-<marquee scrollamount="15">{content} - {content} - {content} - {content} -</marquee>
+<marquee scrollamount="10">{content} - {content} - {content} - {content} -</marquee>
 
 <style>
 marquee {
