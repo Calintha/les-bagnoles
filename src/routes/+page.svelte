@@ -94,6 +94,9 @@
     }
     .header-text h1 {
         font-size: 3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .cards {
         display: flex;
