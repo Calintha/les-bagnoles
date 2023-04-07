@@ -24,7 +24,7 @@ onMount(async () => {
         </div>
         <div class="header-text">
             <h1>{car.name}</h1>
-            <h2>{car.price} $</h2>
+            <h2>{car.price} USD</h2>
             <p>{car.description}</p>
         </div>
     </div>
@@ -71,10 +71,10 @@ onMount(async () => {
     }
     @keyframes slide-in {
         from {
-            transform: translateX(-100%);
+            transform: translateX(-100%) scale(0.6);
         }
         to {
-            transform: translateX(0);
+            transform: translateX(0) scale(1.3);
         }
     }
     .header-text {
