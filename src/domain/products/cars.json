@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Doc Hudson",
         "slug": "doc-hudson",
-        "image": "/products/cars/doc_hudson.webp",
+        "image": "/products/cars/hudson/hudson.webp",
         "price": 120000,
         "description": "He was once one of the most famous race cars in history; he won three Piston Cups in a row and still holds the record for most wins in a single season. However, it all changed for Doc when he was involved in a terrible crash during the final lap of the 1954 Piston Cup championship race, which saw him put out for the season. Upon his return, he was received with a complete absence of fanfare and told that he was a has-been who had been passed up for the next rookie in line. He kept a newspaper article on the career-ending crash as a reminder to never to return to the career that nearly killed him.",
         "image_galery": [
@@ -26,7 +26,7 @@
         "id": 2,
         "name": "Lightning McQueen",
         "slug": "lightning-mcqueen",
-        "image": "/mcqueen.png",
+        "image": "/products/cars/mcqueen/mcqueen.webp",
         "price": 2499000,
         "description": "Lightning has blue eyes and primary has warm colors in his paint jobs. His car model is said to be a stock car and a more curvaceous Le Mans endurance racer mixed together, while the Cars Blu-ray Car Finder game states it to be a 2006 handmade one-of-a-kind car.",
         "image_galery": [
@@ -53,7 +53,7 @@
         "id": 3,
         "name": "Mater",
         "slug": "mater",
-        "image": "/products/cars/mater.png",
+        "image": "/products/cars/mater/mater.webp",
         "price": 6300,
         "description": "Mater is a rusty old tow truck who lives in Radiator Springs. He is a good friend of Lightning McQueen and is the town's local tow truck. He is also the town's local storyteller, and is known for his tall tales.",
         "image_galery": [
@@ -76,7 +76,7 @@
         "id": 4,
         "name": "Sally Carrera",
         "slug": "sally-carrera",
-        "image": "/products/cars/sally.png",
+        "image": "/products/cars/sally/sally.webp",
         "price": 78000,
         "description": "Sally is painted baby blue and has chrome rims and blue eyes. Additionally, she has a black pinstriping tattoo on her back. Sally is modeled after a 2002 Porsche 911 Carrera, and has a license plate that reads \"301PCE\". For the \"Stanley Days\" celebration, she paints herself in a lighter blue and has the outline of her windows and windshield changed from black to chrome. She also has gray trims on her sides, along with using different rims and headlights, and extra pieces of bodywork that hide her rear tires.",
         "image_galery": [
@@ -99,7 +99,7 @@
         "id": 6,
         "name": "Sheriff",
         "slug": "sheriff",
-        "image": "/products/cars/sheriff.jpg",
+        "image": "/products/cars/sheriff/sheriff.webp",
         "price": 45000,
         "description": "Sheriff is a 1949 Mercury 2-door Police Cruiser. He is the sheriff of Radiator Springs and is the town's law enforcement officer",
         "image_galery": [
@@ -122,7 +122,7 @@
         "id": 7,
         "name": "The King",
         "slug": "the-king",
-        "image": "/products/cars/king.png",
+        "image": "/products/cars/king/king.webp",
         "price": 3899000,
         "description": "After a spectacular crash The King looked pretty beat up, but rest assured he was back on his tires in no time flat! When you've been racing and crashing as long as he has, you can handle a few scrapes and bruises.",
         "image_galery": [
@@ -145,7 +145,7 @@
         "id": 9,
         "name": "Wingo",
         "slug": "wingo",
-        "image": "/products/cars/wingo.png",
+        "image": "/products/cars/wingo/wingo.webp",
         "price": 29000,
         "description": "The Tuner Cars catch Mack nodding off to sleep on the way to California. They amuse themselves by playing a prank on a drowsy Mack, by putting him to sleep with soothing music, and nudging him onto the rumble strips along the shoulder. The resulting vibration inadvertently causes Mack's trailer door to open and a sleeping McQueen to roll out of the trailer.",
         "image_galery": [
