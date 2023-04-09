@@ -52,7 +52,6 @@
         {/each}
     </div>
 </section>
-
 <style>
     .header {
         display: flex;
