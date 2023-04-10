@@ -52,6 +52,13 @@
         {/each}
     </div>
 </section>
+<div class="repair">
+    <img src="/home/repair.webp" alt="guedo" loading="lazy">
+    <div class="repair-text">
+        <h2>Repair</h2>
+        <p>Our team of experts will take care of your vehicle and make it look like new.</p>
+    </div>
+</div>
 <style>
     .header {
         display: flex;
@@ -102,5 +109,31 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+    }
+
+    .repair {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .repair img {
+        width: 100%;
+    }
+
+    .repair-text {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: #fff;
+        margin: 0;
+        padding: 10px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        text-align: right;
+        margin-right: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        right: 0;
     }
 </style>
