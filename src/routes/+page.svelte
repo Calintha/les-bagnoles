@@ -1,5 +1,6 @@
 <script>
     import Card from '../components/Card.svelte';
+    import Video from '../components/Video.svelte';
 
     let cards = [
         {
@@ -40,6 +41,7 @@
         <a href="/product/cars" class="btn btn-primary">Shop now</a>
     </div>
 </div>
+<Video />
 <section>
     <h2>Why buy from us ?</h2>
     <div class="cards">
