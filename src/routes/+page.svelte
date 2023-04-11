@@ -31,7 +31,7 @@
 
 <div class="header">
     <div class=header-image-container>
-        <img src="/products/cars/mcqueen/mcqueen.webp" alt="mcqueen" class="header-image" loading="lazy">
+        <img src="/products/cars/mcqueen/mcqueen.webp" alt="mcqueen" class="header-image">
     </div>
     <div class="header-text">
         <h1>Katchaaaaaaaw !</h1>
