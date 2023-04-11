@@ -32,7 +32,13 @@
 
 <div class="header">
     <div class=header-image-container>
-        <img src="/products/cars/mcqueen/mcqueen.webp" alt="mcqueen" class="header-image">
+        <img 
+            width="445"
+            height="333"
+            src="/products/cars/mcqueen/mcqueen.webp" 
+            alt="mcqueen" 
+            class="header-image"
+            >
     </div>
     <div class="header-text">
         <h1>Katchaaaaaaaw !</h1>
@@ -55,7 +61,21 @@
     </div>
 </section>
 <div class="repair">
-    <img src="/home/repair.webp" alt="guedo" loading="lazy">
+    <picture>
+        <source
+            width="1920"
+            height="800"
+            srcset="/home/repair_full_size.webp" 
+            media="(min-width: 600px)"
+            />
+        <img
+            width="800"
+            height="330"
+            src="/home/repair.webp" 
+            alt="repair service" 
+            loading="lazy"
+            />
+    </picture>
     <div class="repair-text">
         <h2>Repair</h2>
         <p>Our team of experts will take care of your vehicle and make it look like new.</p>
@@ -69,6 +89,8 @@
         align-items: center;
         background-color: #f8f9fa;
         padding: 8rem 4rem;
+        min-height: calc(100vh - 69px);
+        box-sizing: border-box;
     }
 
     @media screen and (max-width: 768px) {
@@ -148,10 +170,15 @@
     }
     
     @media only screen and (max-width: 576px) {
-    .repair-text {
-        font-size: 1em;
-        padding: 5px;
-        margin-right: 5px;
+        .repair-text {
+            font-size: 1em;
+            padding: 5px;
+            margin-right: 5px;
+        }
     }
-}
+
+    .repair img {
+        width: 100%;
+        height: auto;
+    }
 </style>
