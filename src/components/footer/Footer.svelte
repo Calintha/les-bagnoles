@@ -3,13 +3,13 @@
         padding:40px 0;
         background-color: #f8f9fa;
         color: #6c757d;
+        font-size: 1.5em;
     }
 
     .footer ul {
         list-style: none;
         padding: 0;
         text-align: center;
-        font-size: 2em;
         line-height: 1.6;
         margin-bottom: 0;
     }
