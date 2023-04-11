@@ -5,6 +5,7 @@
   width: 100vw;
   margin: 0rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 #image-track {
