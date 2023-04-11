@@ -136,4 +136,20 @@
         box-sizing: border-box;
         right: 0;
     }
+
+    @media only screen and (max-width: 768px) {
+    .repair-text {
+        font-size: 1.2em;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    }
+    
+    @media only screen and (max-width: 576px) {
+    .repair-text {
+        font-size: 1em;
+        padding: 5px;
+        margin-right: 5px;
+    }
+}
 </style>
