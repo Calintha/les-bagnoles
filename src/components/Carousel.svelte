@@ -21,7 +21,7 @@
 #image-track > .image-container {
   position: relative;
   width: 60vmin;
-  background: linear-gradient(0deg, #222934 0%, #60656d 100%);
+  background-color: #222934;
   overflow: hidden;
 }
 
@@ -44,7 +44,7 @@
 
 #image-track > .image-container h3 {
   position: absolute;
-  bottom: -20px;
+  bottom: -2px;
   left: -8px;
   white-space: nowrap;
   color: white;
@@ -53,7 +53,7 @@
 }
 #image-track > .image-container .btn {
   position: absolute;
-  bottom: 2rem;
+  bottom: 4rem;
   right: 2rem;
 }
 </style>
@@ -61,6 +61,7 @@
 <script>
   import { onMount } from 'svelte';
   export let elements = [];
+  
   let mouseDownAt = 0;
   let prevPercentage = 0;
   onMount(() => {
@@ -100,9 +101,13 @@
 
 <div class="carousel">
   <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-    {#each elements as element}
+    {#each elements as element, index}
       <div class="image-container">
-        <img class="image" src={element.image} alt={element.name} draggable="false" loading="lazy"/>
+        {#if index == 0}
+          <img class="image" src={element.image} alt={element.name} draggable="false"/>
+        {:else}
+          <img class="image" src={element.image} alt={element.name} draggable="false" loading="lazy"/>
+        {/if}
         <h3>{element.name}</h3>
         {#if element.slug}
           <a href={`/product/${element.slug}`} class="btn btn-primary">Discover</a>

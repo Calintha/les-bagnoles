@@ -2,7 +2,7 @@
     .footer {
         padding:40px 0;
         background-color: #f8f9fa;
-        color: #6c757d;
+        color: #3B4044;
         font-size: 1.5em;
     }
 
@@ -38,7 +38,7 @@
         text-align: center;
         font-size: 0.8em;
         margin-bottom: 0;
-        color: #6c757d;
+        color: #3B4044;
     }
 </style>
 <script>
