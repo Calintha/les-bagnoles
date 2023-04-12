@@ -23,6 +23,8 @@
   width: 60vmin;
   background-color: #222934;
   overflow: hidden;
+  contain: layout;
+  contain-intrinsic-size: 70vmin 56vmin;
 }
 
 #image-track > .image-container {
@@ -63,11 +65,12 @@
   import { onMount } from 'svelte';
   export let elements = [];
   
+  let loaded = Array(elements.length).fill(false);
+
   let mouseDownAt = 0;
   let prevPercentage = 0;
   onMount(() => {
     const track = document.getElementById('image-track');
-    const image_containers = track.getElementsByClassName('image-container');
     const images = track.getElementsByClassName('image');
     const handleOnDown = (e) => mouseDownAt = e.clientX;
     const handleOnUp = () => {
@@ -105,9 +108,9 @@
     {#each elements as element, index}
       <div class="image-container">
         {#if index == 0}
-          <img class="image" src={element.image} alt={element.name} draggable="false"/>
+          <img class="image" src={element.image} alt={element.name} width="100%" height="100%" draggable="false" on:load={() => loaded[index] = true} />
         {:else}
-          <img class="image" src={element.image} alt={element.name} draggable="false" loading="lazy"/>
+          <img class="image" src={element.image} alt={element.name} width="100%" height="100%" draggable="false" loading="lazy" on:load={() => loaded[index] = true} />
         {/if}
         <p class="heading-3">{element.name}</p>
         {#if element.slug}

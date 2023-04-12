@@ -1,25 +1,25 @@
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-import CarRepository from '../../../repository/products/car_repository.js';
-const cars = CarRepository.findAll();
+  import CarRepository from "../../../repository/products/car_repository.js";
+  const cars = CarRepository.findAll();
 
-let Carousel;
-onMount(async () => {
-const module = await import("../../../components/Carousel.svelte");
-Carousel = module.default;
-});
+  let Carousel;
+  onMount(async () => {
+    const module = await import("../../../components/Carousel.svelte");
+    Carousel = module.default;
+  });
 </script>
 
 <svelte:head>
-    <title>The Bagnoles - Products</title> 
+  <title>The Bagnoles - Products</title>
 </svelte:head>
 
 <h1>Discover our bagnoles</h1>
-<svelte:component this={Carousel} elements={cars}/>
+<svelte:component this={Carousel} elements={cars} />
 
 <style>
-    h1 {
-        text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 </style>
