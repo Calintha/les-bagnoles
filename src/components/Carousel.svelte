@@ -42,14 +42,15 @@
   transform: scale(1.1);
 }
 
-#image-track > .image-container h3 {
+#image-track > .image-container .heading-3 {
   position: absolute;
   bottom: -2px;
   left: -8px;
   white-space: nowrap;
   color: white;
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin: 0;
+  font-weight: 700;
 }
 #image-track > .image-container .btn {
   position: absolute;
@@ -108,7 +109,7 @@
         {:else}
           <img class="image" src={element.image} alt={element.name} draggable="false" loading="lazy"/>
         {/if}
-        <h3>{element.name}</h3>
+        <p class="heading-3">{element.name}</p>
         {#if element.slug}
           <a href={`/product/${element.slug}`} class="btn btn-primary">Discover</a>
         {/if}
