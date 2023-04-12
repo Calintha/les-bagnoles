@@ -15,7 +15,7 @@ Carousel = module.default;
     <title>The Bagnoles - Products</title> 
 </svelte:head>
 
-<h1>Discover our vehicules</h1>
+<h1>Discover our bagnoles</h1>
 <svelte:component this={Carousel} elements={cars}/>
 
 <style>
