@@ -26,9 +26,10 @@
         box-sizing: border-box;
     }
 </style>
+
 <div class="video-container">
-    <video controls>
-        <source src="home/video.webp" type="video/webp">
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <video controls poster="home/poster.webp" preload="none">
         <source src="home/video.mp4" type="video/mp4">
     </video>
     <div class="video-overlay">Preview</div>
