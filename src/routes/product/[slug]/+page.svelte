@@ -62,6 +62,11 @@ const submitBuy = async (event) => {
             <h1>{car.name}</h1>
             <h2>{car.price} USD</h2>
             <p>{car.description}</p>
+            <div class="characteristic">
+                <h2>1 523 kg</h2>
+                <h2>4,5g/km Émissions CO2</h2>
+                <h2>9,6s Accélération (0-100 km/h)</h2>
+            </div>
             <button class="btn" on:click={openDialog}>Buy this car</button>
         </div>
     </div>
@@ -223,5 +228,22 @@ const submitBuy = async (event) => {
         font: inherit;
         cursor: pointer;
         outline: inherit;
+    }
+
+    .characteristic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .characteristic {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .characteristic h2 {
+            margin-bottom: 10px;
+        }
     }
 </style>
