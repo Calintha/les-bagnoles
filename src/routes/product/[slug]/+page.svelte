@@ -64,8 +64,8 @@ const submitBuy = async (event) => {
             <p>{car.description}</p>
             <div class="characteristic">
                 <h2>1 523 kg</h2>
-                <h2>4,5g/km Émissions CO2</h2>
-                <h2>9,6s Accélération (0-100 km/h)</h2>
+                <h2>4,5g/km CO2</h2>
+                <h2>9,6s Accélération</h2>
             </div>
             <button class="btn" on:click={openDialog}>Buy this car</button>
         </div>
